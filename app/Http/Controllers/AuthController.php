@@ -2,20 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Exceptions\AuthFailedException;
-use App\Helpers\MessagesHelper;
-use App\Http\Requests\LoginRequest;
-use App\Http\Requests\RegisterRequest;
-use App\Http\Resources\LoginResource;
-use App\Http\Resources\RegisterResource;
 use App\Models\User;
-use App\Repositories\contracts\IAuthRepository;
-use App\Repositories\implementations\AuthRepository;
-use Exception;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
